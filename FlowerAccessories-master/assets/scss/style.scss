@@ -1,0 +1,275 @@
+@import "libs/button";
+@import "libs/pop-up";
+@import "libs/header";
+@import "libs/footer";
+@import "libs/fonts";
+@import "libs/fontello";
+@import "libs/normalize";
+
+body {
+    position: relative;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+html {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Circe';
+    font-weight: 400;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul li,
+ol li {
+    margin: 0;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.clearfix {
+    &:after {
+        content: " ";
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        clear: both;
+        height: 0;
+    }
+}
+
+.slick-arrow{
+    position: absolute;
+    bottom: 35px;
+    z-index: 3;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #f8f5ed;
+    width: 46px;
+    height: 46px;
+    &:before{
+      content: '';
+      width: 7px;
+      height: 15px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  .slick-prev{
+    left: 10%;
+    &:before{
+      background: url('../img/small-left.png') no-repeat;
+      background-size: contain;
+      right: 3px;
+    }
+  }
+  .slick-next{
+    right: 10%;
+    &:before{
+      background: url('../img/small-right.png') no-repeat;
+      background-size: contain;
+      left: 3px;
+    }
+  }
+
+a {
+    cursor: pointer;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+h1 {
+    margin: 0;
+    font-family: 'JOURNALISM';
+}
+
+h2 {
+    font-family: 'JOURNALISM';
+}
+
+h3 {
+    font-family: 'JOURNALISM';
+    font-size: 35px;
+    text-align: center;
+    color: #414141;
+}
+
+h4 {}
+
+main{
+    background: #F8F5ED;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.style-checkbox {
+    input{
+        display: none;
+    }
+    input, label{
+        position: relative;
+        white-space: nowrap;  
+        margin-top: 0px;
+        transition: 0.5s;
+    }
+    input, label:before{
+        position: relative;
+        content: '';
+        position: absolute; top: 50%; 
+        left: 0;
+        width: 13px;
+        height: 13px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        margin-top: -8px;
+        border: 1px solid #CECCC5;
+        padding: 1px;
+        box-shadow: 
+          0px 0px 1px 3px #ffffff inset;
+    }
+    input:checked + label:before{
+        background-color: #748C6C;;
+        width: 13px;
+        height: 13px;
+    }
+}
+.style-checkbox.active{
+    input,label{
+        padding: 0px 50px 0px 23px; 
+    }
+}
+
+
+.crumbs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    li{
+        position: relative;
+        padding: 0 5px;
+        &:not(:last-of-type){
+            &:after{
+                position: absolute;
+                right: 0;
+                content: '/';
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                font-size: 14px;
+                color: #2A384D;
+            }
+        }
+        a{
+            font-size: 14px;
+            color: #2A384D;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 648px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 864px;
+    }
+    h3 {
+        font-size: 44px;
+        text-align: center;
+    }
+    .crumbs{
+        li{
+            a{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        width: 1080px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1240px;
+    }
+}
+
+
+::-webkit-scrollbar {height: 0px; width: 0px;}
+::-webkit-scrollbar-track {  background-color: transparent;}
+::-webkit-scrollbar-thumb { height: auto; background-color: transparent; width: 0px;}

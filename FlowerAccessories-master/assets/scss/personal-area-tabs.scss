@@ -1,0 +1,126 @@
+.top-tabs{
+  max-width: 100%;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D3D1CA;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  position: relative;
+  z-index: 2;
+  li{
+    min-width: 70%;
+    a{
+      font-family: 'JOURNALISM';
+      font-size: 23px;
+      color: #414141;
+      position: relative;
+      &:before{
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        width: 0;
+        background: #748C6C;
+        border-radius: 7px 7px 0px 0px;
+        height: 3px;
+        content: '';
+        transition: 0.5s;
+      }
+    }
+  }
+  .active-tab{
+    a{
+      color: #748C6C;
+      &:before{
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 425px){
+  main{
+    .top-tabs{
+      li{
+        min-width: 55%;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 500px){
+  main{
+    .top-tabs{
+      li{
+        min-width: 47%;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 600px){
+  main{
+    .top-tabs{
+      li{
+        min-width: 20px;
+        width: auto;
+        margin-right: 25px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .top-tabs{
+    margin: 0 auto;
+    margin-bottom: 35px;
+    width: 648px;
+    padding: 0;
+    padding-bottom: 21px;
+    li{
+      margin-right: 0;
+      &:not(:last-of-type){
+        margin-right: 65px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1024px){
+  .top-tabs{
+    width: 864px;
+    padding-bottom: 15px;
+    li{
+      a{
+        font-size: 30px;
+        &:before{
+          bottom: -20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px){
+  main{
+    .top-tabs{
+      width: 1080px;
+    }
+  }
+}
+
+
+@media (min-width: 1400px){
+  main{
+    .top-tabs{
+      width: 1240px;
+    }
+  }
+}

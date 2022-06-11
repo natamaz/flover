@@ -1,0 +1,119 @@
+.cont-info-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  h5{
+    font-size: 16px;
+    color: #343C47;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #454E5C;
+    display: block;
+  }
+  .all-personal-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    .one-inp{
+      margin-bottom: 20px;
+      input{
+        width: 280px;
+        height: 35px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        padding: 2px 15px;
+        border: none;
+        font-size: 14px;
+        color: #454E5C;
+        margin-right: 2px;
+      }
+      select{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 425px){
+  .cont-info-block{
+    h5{
+      text-align: center;
+    }
+  }
+}
+
+
+@media (min-width: 768px){
+  .cont-info-block{
+    align-items: flex-start;
+    h5{
+      text-align: left;
+      font-size: 18px;
+    }
+    label{
+      font-size: 15px;
+    }
+    .all-personal-info{
+      justify-content: space-between;
+    }
+    .change-info{
+      max-width: 610px;
+      width: 100%;
+    }
+    .change-pass{
+      max-width: 610px;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .cont-info-block{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 200px;
+    h5{
+      text-align: left;
+    }
+    .change-pass{
+      max-width: 280px;
+      width: 100%;
+    }
+    .change-info{
+      margin-right: 15px;
+    }
+  }
+}
+
+
+@media (min-width: 1280px){
+  .cont-info-block{
+    justify-content: flex-start;
+    .all-personal-info{
+      .one-inp{
+        input{
+          width: 295px;
+          font-size: 15px;
+        }
+      }
+    }
+    .change-info{
+      margin-right: 125px;
+    }
+    .change-pass{
+      max-width: 295px;
+    }
+  }
+}

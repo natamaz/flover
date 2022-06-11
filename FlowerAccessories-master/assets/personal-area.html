@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+  <link rel="stylesheet" href="css/slick.css" data-inprogress="">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/personal-area.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/personal-area-tabs.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/personal-area-cont-info.min.css" data-inprogress="">
+</head>
+
+<body>
+  <!-- Header -->
+  <include src="assets/templates/header.html"></include>
+
+<main class="main">
+  <div class="container">
+    <ul class="crumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="personal-area.html">Личный кабинет</a></li>
+    </ul>
+    <h3>Личный кабинет</h3>
+  </div>
+
+  <ul class="top-tabs">
+    <li class="active-tab cont-info"><a href="javascript:void(0)">Контактная информация</a></li>
+    <li class="saved-order"><a href="javascript:void(0)">Сохраненные заказы</a></li>
+    <li class="history-order"><a href="javascript:void(0)">История заказов</a></li>
+  </ul>
+
+  <div class="container">
+    <section class="cont-info-block">
+      <div class="change-info">
+        <h5>Редактирование личных данных</h5>
+        <div class="all-personal-info">
+          <div class="one-inp">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Наталья ">
+          </div>
+          <div class="one-inp">
+            <label for="surname">Ваша фамилия</label>
+            <input type="text" id="surname" placeholder="Иванова ">
+          </div>
+          <div class="one-inp">
+            <label for="E-mail">E-mail</label>
+            <input type="email" id="E-mail" placeholder="nata@mail.ru ">
+          </div>
+          <div class="one-inp">
+            <label for="phone">Телефон</label>
+            <input type="number" id="phone" placeholder="+7 (945) 098 09 09">
+          </div>
+        </div>
+      </div>
+      <div class="change-pass">
+        <h5>Изменения пароля</h5>
+        <div class="all-personal-info">
+          <div class="one-inp">
+            <label for="old-pass">Старый пароль</label>
+            <input type="password" id="old-pass">
+          </div>
+          <div class="one-inp">
+            <label for="new-pass">Новый пароль</label>
+            <input type="password" id="new-pass">
+          </div>
+          <div class="one-inp">
+            <label for="new-pass2">Подтверждение пароля</label>
+            <input type="password" id="new-pass2">
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="button">Сохранить</a>
+      </div>
+    </section>
+
+    <section class="saved-order-block">
+      <div class="one-sorder opened-order">
+        <div class="top-info">
+          <div class="title">
+            <h6>Дата:</h6>
+            <h5>25.05.2015</h5>
+            <img src="img/gr-arrow.png" alt="">
+          </div>
+          <div class="text-info">
+            <h5 class="name">Название</h5>
+            <h5 class="art">Артикул</h5>
+            <h5 class="code">Код товара</h5>
+            <h5 class="quan">Количество</h5>
+            <h5 class="price">Цена</h5>
+            <div class="delete-product"></div>
+          </div>
+        </div>
+        <div class="all-products">
+          <div class="one-tovar">
+            <div class="image">
+              <a href="one-product.html">
+                <img src="img/flower1.png" alt="">
+              </a>
+              <p class="delete-product mob">
+                <img src="img/+1.png" alt="">
+              </p>
+            </div>
+            <div class="text-info">
+              <a href="one-product.html" class="name">
+                <h5>Лента атласная</h5>
+                <h6>Голубая</h6>
+              </a>
+              <div class="articul art">
+                <span>Артикул:</span>
+                <p>820397</p>
+              </div>
+              <div class="articul code">
+                <span>Код товара:</span>
+                <p>820393454357</p>
+              </div>
+              <div class="quantity-block quan">
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="quantity-num" type="number" value="1"/>
+                <button class="quantity-arrow-plus"> + </button>
+              </div>
+              <h5 class="price">2 490 р.</h5>
+              <p class="delete-product desc">
+                <img src="img/+1.png" alt="">
+              </p>
+            </div>
+          </div>
+          <div class="one-tovar">
+            <div class="image">
+              <a href="one-product.html">
+                <img src="img/flower1.png" alt="">
+              </a>
+              <p class="delete-product mob">
+                <img src="img/+1.png" alt="">
+              </p>
+            </div>
+            <div class="text-info">
+              <a href="one-product.html" class="name">
+                <h5>Лента атласная</h5>
+                <h6>Голубая</h6>
+              </a>
+              <div class="articul art">
+                <span>Артикул:</span>
+                <p>820397</p>
+              </div>
+              <div class="articul code">
+                <span>Код товара:</span>
+                <p>820393454357</p>
+              </div>
+              <div class="quantity-block quan">
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="quantity-num" type="number" value="1"/>
+                <button class="quantity-arrow-plus"> + </button>
+              </div>
+              <h5 class="price">2 490 р.</h5>
+              <p class="delete-product desc">
+                <img src="img/+1.png" alt="">
+              </p>
+            </div>
+          </div>
+          <div class="buttons">
+            <h4>Всего к оплате: 4500 р</h4>
+            <div class="three-buttons">
+              <a href="catalog.html" class="button">Продолжить покупки</a>
+              <a href="javascript:void(0)" class="button to-step2">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="one-sorder">
+        <div class="top-info">
+          <div class="title">
+            <h6>Дата:</h6>
+            <h5>30.05.2015</h5>
+            <img src="img/gr-arrow.png" alt="">
+          </div>
+          <div class="text-info">
+            <h5 class="name">Название</h5>
+            <h5 class="art">Артикул</h5>
+            <h5 class="code">Код товара</h5>
+            <h5 class="quan">Количество</h5>
+            <h5 class="price">Цена</h5>
+            <div class="delete-product"></div>
+          </div>
+        </div>
+        <div class="all-products">
+          <div class="one-tovar">
+            <div class="image">
+              <a href="one-product.html">
+                <img src="img/flower1.png" alt="">
+              </a>
+              <p class="delete-product mob">
+                <img src="img/+1.png" alt="">
+              </p>
+            </div>
+            <div class="text-info">
+              <a href="one-product.html" class="name">
+                <h5>Лента атласная</h5>
+                <h6>Голубая</h6>
+              </a>
+              <div class="articul art">
+                <span>Артикул:</span>
+                <p>820397</p>
+              </div>
+              <div class="articul code">
+                <span>Код товара:</span>
+                <p>820393454357</p>
+              </div>
+              <div class="quantity-block quan">
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="quantity-num" type="number" value="1"/>
+                <button class="quantity-arrow-plus"> + </button>
+              </div>
+              <h5 class="price">2 490 р.</h5>
+              <p class="delete-product desc">
+                <img src="img/+1.png" alt="">
+              </p>
+            </div>
+          </div>
+          <div class="one-tovar">
+            <div class="image">
+              <a href="one-product.html">
+                <img src="img/flower1.png" alt="">
+              </a>
+              <p class="delete-product mob">
+                <img src="img/+1.png" alt="">
+              </p>
+            </div>
+            <div class="text-info">
+              <a href="one-product.html" class="name">
+                <h5>Лента атласная</h5>
+                <h6>Голубая</h6>
+              </a>
+              <div class="articul art">
+                <span>Артикул:</span>
+                <p>820397</p>
+              </div>
+              <div class="articul code">
+                <span>Код товара:</span>
+                <p>820393454357</p>
+              </div>
+              <div class="quantity-block quan">
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="quantity-num" type="number" value="1"/>
+                <button class="quantity-arrow-plus"> + </button>
+              </div>
+              <h5 class="price">2 490 р.</h5>
+              <p class="delete-product desc">
+                <img src="img/+1.png" alt="">
+              </p>
+            </div>
+          </div>
+          <div class="buttons">
+            <h4>Всего к оплате: 4500 р</h4>
+            <div class="three-buttons">
+              <a href="catalog.html" class="button">Продолжить покупки</a>
+              <a href="javascript:void(0)" class="button to-step2">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="history-order-block">
+      <div class="some-sort">
+        <div class="select">
+          <img src="img/gr-arrow.png" alt="">
+          <p class="showText">Период </p>
+          <p class="hiddenText bord">Все</p>
+          <p class="hiddenText">За этот месяц</p>
+          <p class="hiddenText">Прошлый месяц</p>
+          <p class="hiddenText">Этот год</p>
+        </div>
+      </div>
+      <div class="all-sorder">
+        <div class="one-sorder">
+          <div class="top-info">
+            <div class="data">
+              <h6>Заказ: 20400176409729</h6>
+              <h6>21.05.2020 15:47</h6>
+            </div>
+            <div class="text-info">
+              <h5 class="name">Название</h5>
+              <h5 class="art">Артикул</h5>
+              <h5 class="code">Код товара</h5>
+              <h5 class="quan">Кол-во</h5>
+              <h5 class="price">Цена</h5>
+            </div>
+          </div>
+          <div class="all-products">
+            <div class="one-tovar">
+              <div class="image">
+                <a href="one-product.html">
+                  <img src="img/flower1.png" alt="">
+                </a>
+              </div>
+              <div class="text-info">
+                <a href="one-product.html" class="name">
+                  <h5>Лента атласная</h5>
+                  <h6>Голубая</h6>
+                </a>
+                <div class="articul art">
+                  <span>Артикул:</span>
+                  <p>820397</p>
+                </div>
+                <div class="articul code">
+                  <span>Код товара:</span>
+                  <p>820393454357</p>
+                </div>
+                <div class="quantity-block quan">
+                  <p>1 шт.</p>
+                </div>
+                <h5 class="price">2 490 р.</h5>
+              </div>
+            </div>
+            <div class="one-tovar">
+              <div class="image">
+                <a href="one-product.html">
+                  <img src="img/flower1.png" alt="">
+                </a>
+              </div>
+              <div class="text-info">
+                <a href="one-product.html" class="name">
+                  <h5>Лента атласная</h5>
+                  <h6>Голубая</h6>
+                </a>
+                <div class="articul art">
+                  <span>Артикул:</span>
+                  <p>820397</p>
+                </div>
+                <div class="articul code">
+                  <span>Код товара:</span>
+                  <p>820393454357</p>
+                </div>
+                <div class="quantity-block quan">
+                  <p>1 шт.</p>
+                </div>
+                <h5 class="price">2 490 р.</h5>
+              </div>
+            </div>
+            <div class="buttons">
+              <div class="left">
+                <p>тел. 0999703214</p>
+                <p>г. Москва, отделение №3. ул. Мира, 19</p>
+                <p>Номер декларации: 20400176409729</p>
+              </div>
+              <div class="right">
+                <span>Доставлен</span>
+                <h4>Всего к оплате: 4500 р</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+  
+    <!-- Footer -->
+    <include src="assets/templates/footer.html"></include>
+    <include src="assets/templates/pop-up.html"></include>
+
+  
+    <!-- Скрипты -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/personal-area.min.js"></script>
+  
+  </body>
+  
+  </html>

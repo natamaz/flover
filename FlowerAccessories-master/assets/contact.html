@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+  <link rel="stylesheet" href="css/slick.css" data-inprogress="">
+  <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+  <link rel="stylesheet" href="css/contact.min.css" data-inprogress="">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=db64d94d-cf93-48b4-b626-000c4ad108a1" type="text/javascript"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <include src="assets/templates/header.html"></include>
+
+<main class="main">
+  <div class="container">
+
+    <ul class="crumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="contact.html">Контакты</a></li>
+    </ul>
+
+    <h3>КОНТАКТЫ</h3>
+  </div>
+
+  <div class="top-info">
+    <div class="text-info">
+      <div class="info-block long-info-block">
+        <span class="circle">
+          <img src="img/clock.png" alt="">
+        </span>
+        <div class="on-hover grafik">
+          <p>Режим работы склада: <span>Пн - Пт с 7.00 до 18.00</span> </p>
+        </div>
+      </div>
+      <div class="info-block">
+        <span class="circle">
+          <img src="img/phone.png" alt="">
+        </span>
+        <div class="on-hover">
+          <a href="tel:'8-800-123-45-67'">8-800-123-45-67</a>
+        </div>
+      </div>
+      <div class="info-block">
+        <span class="circle">
+          <img src="img/geo.png" alt="">
+        </span>
+        <div class="on-hover">
+          <a href="javascript:void(0)'">г. Москва, ул. Ленина, 25</a>
+        </div>
+      </div>
+    </div>
+    <div class="photo">
+      <div class="ph-cont">
+        <img src="img/photo-contact1.png" alt="">
+      </div>
+      <div class="ph-cont2">
+        <img src="img/photo-contact2.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="map" id="map"></div>
+</main>
+
+<!-- Footer -->
+<include src="assets/templates/footer.html"></include>
+<include src="assets/templates/pop-up.html"></include>
+
+
+<!-- Скрипты -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/script.min.js"></script>
+<script src="js/contact.min.js"></script>
+
+</body>
+
+</html>
